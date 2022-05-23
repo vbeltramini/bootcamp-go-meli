@@ -3,8 +3,8 @@ package main
 import (
 	"fmt"
 
-	exercises_part_one "github.com/victor-beltramini/bootcamp-go/go-basics-part-two/exercises-part-one"
-	exercises_part_two "github.com/victor-beltramini/bootcamp-go/go-basics-part-two/exercises-part-two"
+	exercises_part_one "github.com/vhbeltramini/bootcamp-go-meli/go-basics-part-two/exercises-part-one"
+	exercises_part_two "github.com/vhbeltramini/bootcamp-go-meli/go-basics-part-two/exercises-part-two"
 )
 
 func main() {

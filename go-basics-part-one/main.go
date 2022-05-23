@@ -1,8 +1,8 @@
 package main
 
 import (
-	exercises_part_one "github.com/victor-beltramini/bootcamp-go/go-basics-part-one/exercises-part-one"
-	exercises_part_two "github.com/victor-beltramini/bootcamp-go/go-basics-part-one/exercises-part-two"
+	exercises_part_one "github.com/vhbeltramini/bootcamp-go-meli/go-basics-part-one/exercises-part-one"
+	exercises_part_two "github.com/vhbeltramini/bootcamp-go-meli/go-basics-part-one/exercises-part-two"
 )
 
 func main() {
