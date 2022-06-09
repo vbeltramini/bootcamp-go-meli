@@ -19,12 +19,12 @@ func main() {
 		log.Fatal("failed to load .env")
 	}
 	productHandler := handler.NewProduct()
-	gin := gin.Default()
+	ginRouter := gin.Default()
 
 	docs.SwaggerInfo.Host = os.Getenv("HOST")
-	gin.GET("/docs/*any", ginSwagger.WrapHandler(swaggerfiles.Handler))
+	ginRouter.GET("/docs/*any", ginSwagger.WrapHandler(swaggerfiles.Handler))
 
-	productsRouterGroup := gin.Group("/products")
+	productsRouterGroup := ginRouter.Group("/products")
 	{
 
 		productsRouterGroup.Use(productHandler.AuthToken)
@@ -36,5 +36,5 @@ func main() {
 		productsRouterGroup.DELETE("/:id", productHandler.Delete)
 		productsRouterGroup.PATCH("/:id", productHandler.PatchNamePrice)
 	}
-	gin.Run()
+	ginRouter.Run()
 }
